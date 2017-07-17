@@ -111,6 +111,7 @@
               :update-fn 'oi--remap-ivy-match-face
               :action (-lambda ((_ . marker))
                           (with-ivy-window
+                            (outline-show-all)
                             (-> marker marker-position goto-char)
                             (recenter 2))))))
 
