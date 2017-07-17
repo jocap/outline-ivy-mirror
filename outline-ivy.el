@@ -1,3 +1,4 @@
+(require 'cl-lib)
 (require 'dash)
 (require 'ivy)
 (require 'outshine)
@@ -30,7 +31,7 @@
 ;;;###autoload
 (defun oi-rgx ()
   "Regex to match outlines with first group as its text."
-  (cadar outshine-imenu-preliminary-generic-expression))
+  (cl-cadar outshine-imenu-preliminary-generic-expression))
 
 ;;;###autoload
 (defun oi-format-name (STR LEVEL)
