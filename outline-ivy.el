@@ -10,7 +10,7 @@
   "Number of outlines to display, overrides ivy-height.")
 
 (defface oi-match-face
-  '((t :height 1.10 :foreground "light gray"))
+  '((t :height 1.10 :foreground "light gray" :background "black"))
   "Match face for ivy outline prompt.")
 
 (defface oi-face-1
