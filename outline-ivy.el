@@ -106,6 +106,8 @@
 (defun oi-jump ()
   "Prompt fontified, hierarchal outlines for jump."
   (interactive)
+  (set-mark (point))
+  (deactivate-mark)
   (let ((ivy-height oi-height))
     (ivy-read "Outline " (oi-collect-outlines)
               :preselect (oi--preselect)
